@@ -4,18 +4,6 @@ const request = require('supertest');
 const app = require('../lib/app');
 const Order = require('../lib/models/Order');
 
-// TODO: Remove this function & use the Order model
-// async function Order.getById(id) {
-//   const { rows } = await pool.query(
-//     'SELECT * FROM orders WHERE id=$1;',
-//     [id]
-//   );
-
-//   if (!rows[0]) return null;
-
-//   return new Order(rows[0]);
-// }
-
 describe('refactory routes', () => {
   beforeEach(() => {
     return setup(pool);
